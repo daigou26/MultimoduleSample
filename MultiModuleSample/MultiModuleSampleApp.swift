@@ -3,12 +3,17 @@
 //
 
 import SwiftUI
+import FeatureA
+import FeatureB
 
 @main
 struct MultiModuleSampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VStack {
+                FeatureA()
+                FeatureB()
+            }
         }
     }
 }
